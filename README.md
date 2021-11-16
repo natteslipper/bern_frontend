@@ -40,11 +40,11 @@ Rijksmuseum.nl
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 Launchpage
-<img src="images/rijksmuseum_launchpage.png" width="375px" alt="Launchpage">
+<img src="images/rijksmuseum_launchpage.PNG" width="375px" alt="Launchpage">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 Fellowship 
-<img src="images/rijksmuseum_fellowship.png" width="375px" alt="Fellowship page">
+<img src="images/rijksmuseum_fellowship.PNG" width="375px" alt="Fellowship page">
  
 </details>
 
