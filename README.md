@@ -39,11 +39,11 @@ Surface (kies uit responsive óf surface plane)
 Rijksmuseum.nl
 
 #### Screenshot(s) van de eerste pagina (small screen): 
-hier de naam van de pagina  
+Launchpage
 <img src="images/rijksmuseum_launchpage.png" width="375px" alt="Launchpage">
 
 #### Screenshot(s) van de tweede pagina (small screen):
-hier de naam van de pagina  
+Fellowship 
 <img src="images/rijksmuseum_fellowship.png" width="375px" alt="Fellowship page">
  
 </details>
