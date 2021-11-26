@@ -56,10 +56,10 @@ Fellowship
 <summary>uitwerken na afloop 2e werkgroep</summary>
 
 ### de hele pagina: 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+<img src="images/breakdownschets.PNG" width="375px" alt="breakdown van de hele pagina">
 
 ### dynamisch deel (bijv menu): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+<img src="images/breakdownschets_menu.PNG" width="375px" alt="breakdown van een dynamisch deel">
 
 ### wellicht nog een dynamisch deel (bijv filter): 
 <img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
@@ -76,7 +76,7 @@ Fellowship
 <summary>uitwerken voor 1e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Het bouwen van de website gaat erg goed, het brede plaatje is aanwezig, er zijn een paar punten waar ik tegen aan loop die ik wil gaan bespreken. De kleine zoom als je over de afbeeldingen hover laat het hele plaatje groeien. Ik wil hem binnen zijn kader  laten zoomen, net als een photoshop laag. Ik wil de underscores bij de NAV items van links laten groeien, en ik wil de tickets nav items tekst zwart laten worden. 
 
 
 ### Agenda voor meeting
