@@ -90,10 +90,7 @@ samen met je groepje opstellen
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+Deze meeting hebben we gewerkt aan de het hover lijntje, hetgeen wat ik erg lastig vond was om het lijntje aan de onderkant van het woord te krijgen, de oplossing was erg simpel. IPV ::Before was de oplossing ::after.
 
 </details>
 
@@ -107,15 +104,17 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor 2e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Het gaat erg goed! Ik vind het nu ook leuk om te doen, de brede opzet van de website is nu af. Ik ga de footer nog verder uitbreiden en beginnen aan het menu.
+In principe kan ik nu de meeste problemen oplossen zonder naar het internet te gaan, dit geeft een goed gevoel. Wellicht word ik ooit nog een waardig programmeur!
 
+Ik wil gaan beginnen aan de tweede pagina, ik moet nog uitkiezen welke ik wil doen. Omdat ik zelf erg van kunst hou doe ik een schilderij waarschijnlijk.
 
 ### Agenda voor meeting
 samen met je groepje opstellen
 
 | student 1      | student 2          | student 3    | student 4        |
 | ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
+| Hamburger menu maken  | en dit             | en ik dit    | en dan ik dat    |
 | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
 | ...            | ...                | ...          | ...              |
 

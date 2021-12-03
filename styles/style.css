@@ -7,6 +7,7 @@
 
 body {
   margin:0;
+  background-color: #000000;
 }
 
 
@@ -36,32 +37,72 @@ ul {
   list-style-type: none;
   display: flex;
   padding: 0;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
+
+
+li {
+  padding: 15px;
+  color: white;
+}
+
+@media (max-width: 1000px) {
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap; /* added line */
+      border: 0;
+      left: 0;
+}
+}
 
 li a {
+  /* position: relative; */
   text-decoration: none;
-  padding: 15px;
   color: #ffffff;
 }
+/* zorgen dat de menu items op dezelfde regel komen */
+li a::after {
+  content: "";
+  text-decoration: none;
+  color: #ffffff;
+  height: 1px;
+  width: 100%;
+  display: block;
+  background-color: currentColor;
+  transition: transform .3s;
+  transform-origin: bottom left;
+  transform:scaleX(0);
+}
 
-li a:hover {
-  text-decoration: underline;
+li a:hover::after{
+  transform-origin: bottom left;
+  transform: scaleX(1);
+} 
+
+nav ul:last-of-type li:nth-of-type(4) a {
   transform-origin: left;
+  background-color: #d55140;
+  padding: 15px;
+  border-radius: 2px;
 }
 
-li:nth-of-type(4) {
-  background-color: red;
-  display: inline-flex;
-}
 
-li:nth-of-type(4):hover {
+nav ul:last-of-type li:nth-of-type(4) a:hover {
   background-color: white;
-  display: inline-flex;
-  transition: .2s;
   color: black;
+  transition: .2s;
   cursor: pointer;
+}
+
+nav ul:last-of-type li:nth-of-type(4) a::after {
+  content:none;
 }
 
 
@@ -83,6 +124,7 @@ section {
   position: relative;
   height: 100vh;
   width: 100%;
+  overflow: hidden;
 }
 
 
@@ -93,20 +135,29 @@ section img {
   height: 100%;
   top: 0;
   left: 0;
+  overflow: hidden;
 }
 
-section img:hover {
+section:not(:first-of-type) img:hover {
   transform: scale(1.02, 1.02);
   transition: .5s ease-out;
 }
 
-section:nth-of-type(4) {
-  display: flex;
-
+@media (max-width:625px) {
+  section:nth-of-type(4) {
+    flex-direction: column;
+  }
 }
 
-section:nth-of-type(4) img {
- flex: 50%;
+section:nth-of-type(4) {
+  display: flex;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+section:nth-of-type(4) article {
+   flex: 50%;
+  position: relative;
 }
 
 
@@ -117,6 +168,8 @@ section h2 {
   left: 0;
   margin-left: 100px;
   padding-bottom: 15px;
+  z-index: 150;
+  text-transform: uppercase;
 }
 
 section p {
@@ -125,15 +178,36 @@ section p {
   bottom: 2em;
   left: 0;
   margin-left: 100px;
+  z-index: 200;
 }
 
 section:nth-of-type(4) h2:nth-of-type(2) {
   color: white;
   left: 500px;
+  overflow: hidden;
 }
 
 section:nth-of-type(4) p:nth-of-type(2) {
   color: white;
   left: 500px;
+  overflow: hidden;
+}
 
+section:nth-of-type(4){
+  height: auto;
+}
+
+/*****************************/
+/*****************************/
+          /* Footer  */
+/*****************************/
+/*****************************/
+
+footer section article p {
+  margin-top: 50px;
+  position: relative;
+}
+
+footer nav ul li  {
+  color: white;
 }
