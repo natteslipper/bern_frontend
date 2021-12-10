@@ -20,13 +20,16 @@ body {
 
 
 header {
-  margin: 40px 100px 0px 100px;
+  margin: 2em 5em 0 5em;
   position: absolute;
   left: 0;
   right: 0;
-  z-index: 100;
+  z-index: 301;
 }
   
+ul {
+  list-style-type: none;
+}
 
 header nav:first-of-type {
   display: flex;
@@ -43,7 +46,7 @@ header nav:first-of-type ul {
 
 
 header nav:first-of-type li {
-  padding: 15px;
+  padding: 1em;
   color: white;
 }
 
@@ -66,7 +69,8 @@ header nav:first-of-type li a {
   text-decoration: none;
   color: #ffffff;
 }
-/* zorgen dat de menu items op dezelfde regel komen */
+
+
 header nav:first-of-type li a::after {
   content: "";
   text-decoration: none;
@@ -88,8 +92,8 @@ header nav:first-of-type li a:hover::after{
 header nav:first-of-type ul:last-of-type li:nth-of-type(4) a {
   transform-origin: left;
   background-color: #d55140;
-  padding: 15px;
-  border-radius: 2px;
+  padding: 1em;
+  border-radius: 5px;
 }
 
 
@@ -112,22 +116,95 @@ header nav:first-of-type ul:last-of-type li:nth-of-type(4) a::after {
 /*****************************/
 /*****************************/
 
+/* Dit heeft Sanne mij laten typen, door de .menuOverlay op de body te zetten, 
+zeggen we tegen de body dat je niet kan scrollen wanneer we de overlay hebben aangeroepen met JS  */
+
+body.menuOverlay {
+  overflow: hidden;
+  z-index: 101;
+}
+
 main section:first-of-type {
   z-index: 300;
-}
-
-main section.menuOverlay {
-  opacity: 1;
-  background-color: red;
-  z-index: 300;
+  position: fixed;
+  left: 0;
+  right: 0;
   height: 100vh;
-  width: 100%;
+  background-color: #40474f;
+  opacity: 0;
+  transition: .5s;
+  transform: translateY(-100%);
 }
 
+
+body.menuOverlay main section:first-of-type {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+main section ul {
+  display: block;
+  column-count: 2;
+  column-width: 50px;
+  margin-top: 40em;
+  max-width: 500px;
+}
+
+main li {
+  padding: .5em;
+  color: #acb5b9;
+  font-size: 1.2em;
+  margin-left: 2em;
+}
+
+main section:first-of-type img {
+  position: absolute;
+  left: 750px;
+  top: 0px;
+  max-width: 45%;
+}
 
 figure {
   margin:0;
 }
+
+
+/* zorgen dat de menu items op dezelfde regel komen */
+main section  h2::after {
+  content: "";
+  text-decoration: none;
+  color: #ffffff;
+  height: 1px;
+  width: 100%;
+  display: block;
+  background-color: currentColor;
+  transition: transform .3s;
+  transform-origin: bottom left;
+  transform:scaleX(0);
+}
+
+main h2:hover::after{
+  transform-origin: bottom left;
+  transform: scaleX(1);
+} 
+
+main section li a::after {
+  content: "";
+  text-decoration: none;
+  color: #ffffff;
+  height: 1px;
+  width: 100%;
+  display: block;
+  background-color: currentColor;
+  transition: transform .3s;
+  transform-origin: bottom left;
+  transform:scaleX(0);
+}
+
+main li a:hover::after{
+  transform-origin: bottom left;
+  transform: scaleX(1);
+} 
 
 section:not(:first-of-type):not(:nth-of-type(5)) {
   position: relative;
@@ -175,8 +252,8 @@ section h2 {
   color: white;
   bottom: 2em;
   left: 0;
-  margin-left: 100px;
-  padding-bottom: 15px;
+  margin-left: 3.5em;
+  padding-bottom: 1em;
   z-index: 150;
   text-transform: uppercase;
 }
@@ -186,7 +263,7 @@ section p {
   color: white;
   bottom: 2em;
   left: 0;
-  margin-left: 100px;
+  margin-left: 5.2em;
   z-index: 200;
 }
 

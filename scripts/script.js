@@ -7,5 +7,5 @@ var hamButton = document.querySelector(".menuKnop");
 hamButton.addEventListener("click", toggleHamburgermenu);
 
 function toggleHamburgermenu() {
-    hamMenu.classList.toggle("menuOverlay");
+    document.body.classList.toggle("menuOverlay");
 }

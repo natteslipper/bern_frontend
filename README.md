@@ -122,10 +122,7 @@ samen met je groepje opstellen
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+Het hamburger menu is af, hij hoeft alleen  verder te worden vormgegeven, ik moet uitvogelen waarom ie wel werkt in mijn browser maar niet als ik hem naar github heb gepushed
 
 </details>
 
@@ -139,24 +136,17 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken na test in 8e voortgang</summary>
 
 ### Bevindingen
-Lijst met je bevindingen die in de test naar voren kwamen:
+Uit mijn testen kwamen naar voren dat de verteller die slechtziende en blinden gebruiken nog wel wat werk kan gebruiken, er waren een aantal dingen die ik wel moet verbeteren, zo missen vrijwel alle afbeeldingen de alt tag. Dit ga ik veranderen.
 
 #### Titel eerste bevinding
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+De eerste test die ik heb gedaan met een bril was die voor kleurenblindheid, Adam is van zichzelf kleurenblind dus die heeft ook geholpen, hij heeft gezegd dat mijn website goed werkt en er genoeg contrast is om de website kleurenblindheidvriendelijk te maken.
 
 
 #### Titel tweede bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
-
+Uit mijn testen kwamen naar voren dat de verteller die slechtziende en blinden gebruiken nog wel wat werk kan gebruiken, er waren een aantal dingen die ik wel moet verbeteren, zo missen vrijwel alle afbeeldingen de alt tag. Dit ga ik veranderen.
 
 #### Titel volgende bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+Een andere bevinding die ik  tegenkwam was dat website goed te gebruiken is als je spasmes/parkison hebt, je kan door de website heen navigeren met je toetsenbord, in principe is de muis niet nodig. 
 
 
 #### Titel nog een bevinding. 
