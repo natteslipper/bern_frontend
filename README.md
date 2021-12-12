@@ -145,14 +145,6 @@ De eerste test die ik heb gedaan met een bril was die voor kleurenblindheid, Ada
 #### Titel tweede bevinding. 
 Uit mijn testen kwamen naar voren dat de verteller die slechtziende en blinden gebruiken nog wel wat werk kan gebruiken, er waren een aantal dingen die ik wel moet verbeteren, zo missen vrijwel alle afbeeldingen de alt tag. Dit ga ik veranderen.
 
-#### Titel volgende bevinding. 
-Een andere bevinding die ik  tegenkwam was dat website goed te gebruiken is als je spasmes/parkison hebt, je kan door de website heen navigeren met je toetsenbord, in principe is de muis niet nodig. 
-
-
-#### Titel nog een bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
 
 </details>
 
@@ -166,7 +158,11 @@ Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbe
 <summary>uitwerken voor 3e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Voor dit voortgangsgesprek had ik in principe alles op orde, 1 dingetje waar we vast liepen was het lijntje
+onder de tekst voor de items in het menu. Verder ben ik tevreden waar ik ben, maar ik moet wel haast
+gaan maken dit weekend, het hamburger menu is nu af, wat een goed gevoel geeft, de opzet is nu klaar.
+
+2 pagina's met een dropdown menu, ik ben trots op wat ik heb neergezet.
 
 
 ### Agenda voor meeting
@@ -199,12 +195,28 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor eindgesprek</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Tegen het einde van het project aan merkte ik toch dat ik flink wat tijd tekort kom, ik heb enorm veel gedaan
+dus aan mijn werkethiek ligt het niet, maar het lag vooral aan de onderschatting van het aantal werk wat er na
+de 2 pagina's gebeurd moet worden. Ik ging voor de surface plane.
 
+Lang verhaal kort, ik had gewoon tijd te kort.
+
+-De dingen die ik nog wilde toevoegen zijn een light/dark mode.
+-Advanced positioning. (Gelukt)
+-Video (Gelukt)
+-Meer micto interacties.
+-Het instellen van lettergrote
+-Custom themes  (Dit zou leuk zijn om verschillende kunstwerken overeen te laten komen met het thema.)
+
+Alhoewel ik voor de herkansing ga, ben ik erg trots op wat ik wel heb gemaakt. Ik heb veel geleerd en 
+ben van gedachten veranderd over wat ik vind van coderen. Ik vind het zelfs best wel leuk, het enige 
+wat ik jammer vind is dat ik niet genoeg tijd had, maarja, niks aan te doen verder.
 ### Screenshot(s)
 
-hier screenshot(s) van je eindresultaat
-
+<img src="imagesReadme/home_screen.PNG" width="375px" alt="Launchpage">
+<img src="imagesReadme/dropdown_menu.PNG" width="375px" alt="Launchpage">
+<img src="imagesReadme/gebaren_screen.PNG" width="375px" alt="Launchpage">
+<img src="imagesReadme/video.PNG" width="375px" alt="Launchpage">
 </details>
 
 
