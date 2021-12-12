@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Rijksmuseum-Bold';
+  src: url('Rijksmuseum-Bold.eot');
+  src: url('Rijksmuseum-Bold.eot?#iefix') format('embedded-opentype'),
+       url('Rijksmuseum-Bold.svg#Rijksmuseum-Bold') format('svg'),
+       url('Rijksmuseum-Bold.ttf') format('truetype'),
+       url('Rijksmuseum-Bold.woff') format('woff'),
+       url('Rijksmuseum-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+

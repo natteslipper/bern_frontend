@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Rijksmuseum-Normal';
+  src: url('Rijksmuseum-Normal.eot');
+  src: url('Rijksmuseum-Normal.eot?#iefix') format('embedded-opentype'),
+       url('Rijksmuseum-Normal.svg#Rijksmuseum-Normal') format('svg'),
+       url('Rijksmuseum-Normal.ttf') format('truetype'),
+       url('Rijksmuseum-Normal.woff') format('woff'),
+       url('Rijksmuseum-Normal.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+

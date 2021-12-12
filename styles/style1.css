@@ -1,0 +1,494 @@
+/* CSS Document */
+*, *::after, *::before {
+    box-sizing:border-box;  
+    font-family: 'Rijksmuseum-Bold', Arial, Helvetica, sans-serif;
+  }
+  
+  @font-face {
+    font-family: 'Rijksmuseum-Bold';
+    src: url('./fonts/Rijksmuseum-Bold.eot');
+    src: url('./fonts/Rijksmuseum-Bold.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/Rijksmuseum-Bold.svg#Rijksmuseum-Bold') format('svg'),
+         url('./fonts/Rijksmuseum-Bold.ttf') format('truetype'),
+         url('./fonts/Rijksmuseum-Bold.woff') format('woff'),
+         url('./fonts/Rijksmuseum-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Rijksmuseum-Normal';
+    src: url('./fonts/Rijksmuseum-Normal.eot');
+    src: url('./fonts/Rijksmuseum-Normal.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/Rijksmuseum-Normal.svg#Rijksmuseum-Bold') format('svg'),
+         url('./fonts/Rijksmuseum-Normal.ttf') format('truetype'),
+         url('./fonts/Rijksmuseum-Normal.woff') format('woff'),
+         url('./fonts/Rijksmuseum-Normal.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body {
+    margin:0;
+    background-color: #000000;
+  }
+  
+  
+  /*****************************/
+  /*****************************/
+          /* Header */
+  /*****************************/
+  /*****************************/
+  
+  
+  
+  header {
+    margin: 2em 5em 0 5em;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 301;
+  }
+    
+  ul {
+    list-style-type: none;
+  }
+  
+  header nav:first-of-type {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  header nav:first-of-type ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    flex-wrap: nowrap;
+  }
+  
+  
+  
+  header nav:first-of-type li {
+    padding: 1em;
+    color: white;
+  }
+  
+  @media (max-width: 1000px) {
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap; /* added line */
+        border: 0;
+        left: 0;
+  }
+  }
+  
+   header nav:first-of-type li a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  
+  header nav:first-of-type ul:nth-of-type(1) li:nth-of-type(3) a {
+    transform-origin: left;
+    background-color: gray;
+    color: white;
+    padding: 1em;
+    border-radius: 5px;
+    opacity: 50%;
+  }
+  
+  
+  header nav:first-of-type ul:nth-of-type(1) li:nth-of-type(3) a:hover {
+    background-color: white;
+    color: black;
+    transition: .2s;
+    cursor: pointer;
+  }
+  
+  /* streepje onder menu items */
+
+  /*****************************/
+  /*****************************/
+          /* Header 
+          Hover Element */
+  /*****************************/
+  /*****************************/
+  
+  
+  header nav:first-of-type ul:nth-of-type(2) a:hover::after {
+    content: "";
+    text-decoration: none;
+    color: #ffffff;
+    height: 1px;
+    width: 100%;
+    display: block;
+    background-color: currentColor;
+    transition: transform .3s;
+    transform-origin: bottom left;
+    transform:scaleX(0);
+  }
+
+  
+  header nav:first-of-type ul:nth-of-type(2) a:hover::after{
+    transform-origin: bottom left;
+    transform: scaleX(1);
+  } 
+  
+  header nav:first-of-type ul:last-of-type li:nth-of-type(4) a {
+    transform-origin: left;
+    background-color: #d55140;
+    padding: 1em;
+    border-radius: 5px;
+  }
+  
+  
+  header nav:first-of-type  ul:last-of-type li:nth-of-type(4) a:hover {
+    background-color: white;
+    color: black;
+    transition: .2s;
+    cursor: pointer;
+  }
+  
+  header nav:first-of-type ul:last-of-type li:nth-of-type(4) a::after {
+    content:none;
+  }
+  
+  
+  
+  /*****************************/
+  /*****************************/
+            /* MAIN  */
+  /*****************************/
+  /*****************************/
+  
+
+
+
+  /* Dit heeft Sanne mij laten typen, door de .menuOverlay op de body te zetten, 
+  zeggen we tegen de body dat je niet kan scrollen wanneer we de overlay hebben aangeroepen met JS  */
+  
+  body.menuOverlay {
+    overflow: hidden;
+    z-index: 101;
+  }
+  
+  main section:first-of-type {
+    z-index: 300;
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    background-color: #40474f;
+    opacity: 0;
+    transition: .5s;
+    transform: translateY(-100%);
+  }
+
+
+  
+  
+  body.menuOverlay main section:first-of-type {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  main section ul {
+    display: block;
+    column-count: 2;
+    column-width: 50px;
+    margin-top: 40em;
+    max-width: 500px;
+  }
+  
+  main li {
+    padding: .5em;
+    color: #acb5b9;
+    font-size: 1.2em;
+    margin-left: 2em;
+  }
+  
+  main section:first-of-type img:first-of-type {
+    object-fit: cover;
+    position: absolute;
+    right: 0;
+    top: 0px;
+    max-width: 45%;
+    height: 100%;
+  }
+
+  main section:first-of-type img:last-of-type {
+    object-fit: cover;
+    position: absolute;
+    right: 0;
+    top: 8em;
+    margin: 2em 5em 0 5em;
+    overflow: hidden;
+
+  }
+  
+  figure {
+    margin:0;
+  }
+  
+  
+  /*****************************/
+  /*****************************/
+          /* Tekst elementen */
+  /*****************************/
+  /*****************************/
+  
+  
+  h1 {
+    font-family: Rijksmuseum-Bold;
+    font-size: 6em;
+    text-transform: uppercase;
+    color: white;
+    position: absolute;
+    bottom: .1em;
+    left: .3em;
+    margin-left: .5em;
+    z-index: 150;
+    }
+
+  main section  h2::after {
+    content: "";
+    text-decoration: none;
+    color: #ffffff;
+    height: 1px;
+    width: 100%;
+    display: block;
+    background-color: currentColor;
+    transition: transform .3s;
+    transform-origin: bottom left;
+    transform:scaleX(0);
+  }
+  
+  main h2:hover::after{
+    transform-origin: bottom left;
+    transform: scaleX(1);
+  } 
+  
+  main section li a {
+    position: relative;
+  }
+  
+  main section li a::after {
+    content: "";
+    text-decoration: none;
+    color: red;
+    height: 1px;
+    width: 100%;
+    display: block;
+    background-color: currentColor;
+    transition: transform .3s;
+    transform-origin: bottom left;
+    transform:scaleX(0);
+  }
+  
+  main li a:hover::after{
+    transform-origin: bottom left;
+    transform: scaleX(1);
+  } 
+  
+  section:not(:first-of-type):not(:nth-of-type(3)):not(:nth-of-type(4)) {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  
+  main section:not(:first-of-type) img {
+    object-fit: cover;
+    object-position: 50% 40%;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+  }
+  
+  main section:not(:nth-of-type(2)) img:hover {
+    transform: scale(1.02, 1.02);
+    transition: .5s ease-out;
+  }
+
+    /*****************************/
+  /*****************************/
+          /* drop down menu 
+          voor de gebarentaal
+          sectie */
+  /*****************************/
+  /*****************************/
+  
+  
+
+  main section:nth-of-type(3) {
+    background-color: #40474f;
+    height: 20em;
+  }
+
+  main section:nth-of-type(3).infoGebaren {
+    background-color: #40474f;
+    height: 60em;
+  }
+  
+  main section:nth-of-type(3) article {
+    opacity: 0;
+  }
+
+  main section:nth-of-type(3) article.tekstZichtbaar {
+    opacity: 1;
+  }
+
+  main section:nth-of-type(4) {
+    position: relative;
+    width: 100%;
+  }
+
+  main section:nth-of-type(4) h2{
+    margin-left: 3.5em;
+    position: absolute;
+    bottom: 2.5em;
+    z-index: 205;
+    color: white;
+  } 
+
+  main section:nth-of-type(4) p{
+    font-family: Rijksmuseum-Normal;
+    margin-left: 5.2em;
+    position: absolute;
+    z-index: 205;
+    color: white;
+    bottom: 2.3em;
+  } 
+
+  main section:nth-of-type(4) video{
+    width: 100%;
+  }
+
+
+  
+  @media (max-width:625px) {
+    section:nth-of-type(5) {
+      flex-direction: column;
+    }
+  }
+  
+  section:nth-of-type(5) {
+    display: flex;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  
+  section:nth-of-type(5) article {
+     flex: 50%;
+    position: relative;
+  }
+  
+  
+  main section:not(:nth-of-type(4)) h2 {
+    position: absolute;
+    color: white;
+    bottom: 2em;
+    left: 0;
+    margin-left: 3.5em;
+    padding-bottom: 1em;
+    z-index: 150;
+    text-transform: uppercase;
+  }
+  
+  main section:nth-of-type(3) p {
+    font-family: 'Rijksmuseum-Normal';
+    font-size: 1.3em;
+    color: #c2ccce;
+    max-width: 30em;
+    padding-left: 5em;
+    padding-top: 2em;
+  }
+
+  main section:not(:nth-of-type(3)):not(:nth-of-type(4)) p {
+    font-family: 'Rijksmuseum-Normal';
+    font-weight: normal;
+    position: absolute;
+    color: white;
+    bottom: 2em;
+    left: 0;
+    margin-left: 5.2em;
+    z-index: 200;
+  }
+  
+  section:nth-of-type(5) h2:nth-of-type(2) {
+    color: white;
+    left: 500px;
+    overflow: hidden;
+  }
+  
+  section:nth-of-type(5) p:nth-of-type(2) {
+    color: white;
+    left: 500px;
+    overflow: hidden;
+  }
+  
+  section:nth-of-type(5){
+    height: auto;
+  }
+  
+  /*****************************/
+  /*****************************/
+            /* Footer  */
+  /*****************************/
+  /*****************************/
+  
+  
+  
+  footer section{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  
+  footer h3 {
+    font-weight: bold;
+    color: white;
+    margin-left: 100px;
+    margin-bottom: 10px;
+  }
+  
+  footer ul {
+    padding: 3em;
+  }
+  
+  footer li:not(:first-of-type) {
+    display: inline;
+  }
+  
+  footer section article p{
+    display: block;
+    margin-top: 50px;
+    position: relative;
+    margin-bottom: 0px;
+    color: white;
+    flex: 50%;
+  }
+  
+
+  footer img {
+    display: inline;
+    max-width: 25px;
+  }
+  
+  
+  footer a {
+    color: white;
+  }
+  
+  
