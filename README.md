@@ -219,7 +219,22 @@ wat ik jammer vind is dat ik niet genoeg tijd had, maarja, niks aan te doen verd
 <img src="imagesReadme/video.PNG" width="375px" alt="Launchpage">
 </details>
 
+## Herkansing
 
+Voor de herkansing heb ik alle zeilen bijgezet. Omdat ik eerst niet genoeg tijd had ik het niet gehaald.
+Nu ben ik er vrij van overtuigd dat ik het nu wel ga halen. Ik heb van alle kleuren custom properties gemaakt.
+
+Verder heb ik de surface plane elementen toegevoegd. Dit zijn:
+-Video
+-Custom theme
+-Het instellen van lettergrootte 
+-SVG iconen gestyled en geanimeerd
+-Meer micro interacties 
+-Advanced positioning
+
+En tot op zekere hoogte toegankelijkheid.
+
+Ik ben blij wat ik heb neergezet en ben trots op mijn werk desondanks de beoordeling.
 
 
 
