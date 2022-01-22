@@ -1,15 +1,49 @@
 /* CSS Document */
 *, *::after, *::before {
   box-sizing:border-box;  
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Rijksmuseum-Bold', Arial, Helvetica, sans-serif;
 }
 
+@font-face {
+  font-family: 'Rijksmuseum-Bold';
+  src: url('./fonts/Rijksmuseum-Bold.eot');
+  src: url('./fonts/Rijksmuseum-Bold.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/Rijksmuseum-Bold.svg#Rijksmuseum-Bold') format('svg'),
+       url('./fonts/Rijksmuseum-Bold.ttf') format('truetype'),
+       url('./fonts/Rijksmuseum-Bold.woff') format('woff'),
+       url('./fonts/Rijksmuseum-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rijksmuseum-Normal';
+  src: url('./fonts/Rijksmuseum-Normal.eot');
+  src: url('./fonts/Rijksmuseum-Normal.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/Rijksmuseum-Normal.svg#Rijksmuseum-Bold') format('svg'),
+       url('./fonts/Rijksmuseum-Normal.ttf') format('truetype'),
+       url('./fonts/Rijksmuseum-Normal.woff') format('woff'),
+       url('./fonts/Rijksmuseum-Normal.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --color-text: white; 
+  --body-background: black;
+  --tickets-background: #d55140;
+  --site-background: #40474f;
+}
 
 body {
+  font-size: 100%;
   margin:0;
-  background-color: #000000;
+  background-color: var(--body-background);
 }
 
+body.allfontLarger {
+  font-size: 120%;
+}
 
 /*****************************/
 /*****************************/
@@ -44,11 +78,12 @@ header nav:first-of-type ul {
 }
 
 
-
 header nav:first-of-type li {
   padding: 1em;
-  color: white;
+  color: var(--color-text);
+  margin:auto;
 }
+
 
 @media (max-width: 1000px) {
     .sr-only {
@@ -67,7 +102,7 @@ header nav:first-of-type li {
 
 header nav:first-of-type li a {
   text-decoration: none;
-  color: #ffffff;
+  color: var(--color-text);
 }
 
 
@@ -83,7 +118,7 @@ header nav:first-of-type li a {
 header nav:first-of-type li a::after {
   content: "";
   text-decoration: none;
-  color: #ffffff;
+  color: var(--color-text);
   height: 1px;
   width: 100%;
   display: block;
@@ -100,21 +135,55 @@ header nav:first-of-type li a:hover::after{
 
 header nav:first-of-type ul:last-of-type li:nth-of-type(4) a {
   transform-origin: left;
-  background-color: #d55140;
+  background-color: var(--tickets-background);
+  padding: 1em;
+  border-radius: 5px;
+}
+
+header nav:first-of-type  ul:last-of-type li:nth-of-type(4) a:hover {
+  background-color: var(--color-text);
+  color: var(--site-background);
+  transition: .2s;
+  cursor: pointer;
+
+}
+/* Patroon heb ik van: https://www.magicpattern.design/tools/css-backgrounds  */
+
+header nav:first-of-type ul:last-of-type li:nth-of-type(4) a.kerst {
+  color: var(--site-background);
+  transform-origin: left;
+  background-color: #e5e5f7;
+  background-image:  linear-gradient(135deg, #f73f3f 25%, transparent 25%), linear-gradient(225deg, #f73f3f 25%, transparent 25%), linear-gradient(45deg, #f73f3f 25%, transparent 25%), linear-gradient(315deg, #f73f3f 25%, #e5e5f7 25%);
+  background-position:  10px 0, 10px 0, 0 0, 0 0;
+  background-size: 20px 20px;
+  background-repeat: repeat;
+  padding: 1em;
+  border-radius: 5px;
+}
+
+header nav:first-of-type ul:last-of-type li:nth-of-type(4) a.kerst:hover {
+  transform-origin: left;
+    background-color: #e5e5f7;
+    background-image:  linear-gradient(135deg, #3f70f7 25%, transparent 25%), linear-gradient(225deg, #3f70f7 25%, transparent 25%), linear-gradient(45deg, #3f70f7 25%, transparent 25%), linear-gradient(315deg, #3f70f7 25%, #e5e5f7 25%);
+    background-position:  10px 0, 10px 0, 0 0, 0 0;
+    background-size: 20px 20px;
+    background-repeat: repeat;
   padding: 1em;
   border-radius: 5px;
 }
 
 
-header nav:first-of-type  ul:last-of-type li:nth-of-type(4) a:hover {
-  background-color: white;
-  color: black;
-  transition: .2s;
-  cursor: pointer;
-}
+
+
 
 header nav:first-of-type ul:last-of-type li:nth-of-type(4) a::after {
   content:none;
+}
+
+header nav:first-of-type ul:last-of-type li:last-of-type {
+  margin-top: -1em;
+  width: 5em;
+  cursor: grab;
 }
 
 
@@ -128,6 +197,13 @@ header nav:first-of-type ul:last-of-type li:nth-of-type(4) a::after {
 /* Dit heeft Sanne mij laten typen, door de .menuOverlay op de body te zetten, 
 zeggen we tegen de body dat je niet kan scrollen wanneer we de overlay hebben aangeroepen met JS  */
 
+button {
+  width: 50px;
+  height: 25px;
+  z-index: 1000;
+  position: relative;
+}
+
 body.menuOverlay {
   overflow: hidden;
   z-index: 101;
@@ -139,7 +215,7 @@ main section:first-of-type {
   left: 0;
   right: 0;
   height: 100vh;
-  background-color: #40474f;
+  background-color: var(--site-background);
   opacity: 0;
   transition: .5s;
   transform: translateY(-100%);
@@ -151,17 +227,25 @@ body.menuOverlay main section:first-of-type {
   opacity: 1;
 }
 
+h2.fontLarger {
+  font-size: xx-large;
+}
+
+p.fontLarge {
+  font-size: larger
+}
+
 main section ul {
   display: block;
   column-count: 2;
   column-width: 50px;
-  margin-top: 40em;
+  margin-top: 30em;
   max-width: 500px;
 }
 
 main li {
   padding: .5em;
-  color: #acb5b9;
+  color: var(--color-text);
   font-size: 1.2em;
   margin-left: 2em;
 }
@@ -173,9 +257,56 @@ main section:first-of-type img {
   max-width: 45%;
 }
 
-figure {
-  margin:0;
-}
+  /*****************************/
+  /*****************************/
+          /* Veranderen van
+          logo */
+  /*****************************/
+  /*****************************/
+
+  #logoContainer {
+
+    margin: auto;
+    text-align: center;
+  }
+  
+  header nav:first-of-type ul:last-of-type li:last-of-type {
+    width: 75px;
+    height: 75px;
+  }
+
+  header nav:first-of-type ul:last-of-type li:last-of-type:hover {
+    width: 75px;
+    animation-name: sneeuwvlokjeSpin;
+    animation-duration: .3s;
+  }
+
+  @keyframes sneeuwvlokjeSpin {
+    0% { 
+       transform: rotate(0deg); 
+    }
+    100% {
+    transform: rotate(180deg);
+      }
+    }
+  
+  
+  
+  #logoKerst {
+    width: auto;
+    height: 200px;
+    background-image: url('../images/rijksmuseum-logo-xmas.svg');
+    background-repeat: no-repeat;
+    margin: auto;
+  }
+  
+  #logoKerst.logoNormaal {
+    width: auto;
+    height: 200px;
+    background-image: url('../images/rijksmuseum-logo.svg');
+    background-repeat: no-repeat;
+    margin: auto;
+  }
 
 
   /*****************************/
@@ -188,7 +319,7 @@ figure {
 main section  h2::after {
   content: "";
   text-decoration: none;
-  color: #ffffff;
+  color: var(--color-text);
   height: 1px;
   width: 100%;
   display: block;
@@ -210,7 +341,7 @@ main section li a {
 main section li a::after {
   content: "";
   text-decoration: none;
-  color: red;
+  color: var(--color-text);
   height: 1px;
   width: 100%;
   display: block;
@@ -269,7 +400,7 @@ section:nth-of-type(5) article {
 
 section h2 {
   position: absolute;
-  color: white;
+  color: var(--color-text);
   bottom: 2em;
   left: 0;
   margin-left: 3.5em;
@@ -280,7 +411,7 @@ section h2 {
 
 section p {
   position: absolute;
-  color: white;
+  color: var(--color-text);
   bottom: 2em;
   left: 0;
   margin-left: 5.2em;
@@ -288,13 +419,13 @@ section p {
 }
 
 section:nth-of-type(5) h2:nth-of-type(2) {
-  color: white;
+  color: var(--color-text);
   left: 500px;
   overflow: hidden;
 }
 
 section:nth-of-type(5) p:nth-of-type(2) {
-  color: white;
+  color: var(--color-text);
   left: 500px;
   overflow: hidden;
 }
@@ -321,7 +452,7 @@ footer section{
 
 footer h3 {
   font-weight: bold;
-  color: white;
+  color: var(--color-text);
   margin-left: 100px;
   margin-bottom: 10px;
 }
@@ -339,7 +470,7 @@ footer section article p{
   margin-top: 50px;
   position: relative;
   margin-bottom: 0px;
-  color: white;
+  color: var(--color-text);
   flex: 50%;
 }
 
@@ -350,6 +481,6 @@ footer img {
 
 
 footer a {
-  color: white;
+  color: var(--color-text);
 }
 

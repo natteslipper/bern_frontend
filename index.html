@@ -19,9 +19,9 @@
 			<ul>
 				<li><a href="#"><img src="./images/menu_icon.svg" class="menuKnop"></a></li>
 				<li><img src="./images/search_icon.svg"></li>
-				<li class="sr-only"><a href="#"> Bezoek</a></li>
-				<li class="sr-only"><a href="#">Stories</a></li>
-				<li class="sr-only"><a href="#">Rijksstudio</a></li>
+				<li class="sr-only"><a href="#"><p>Bezoek</p></a></li>
+				<li class="sr-only"><a href="#"><p>Stories</p></a></li>
+				<li class="sr-only"><a href="#"><p>Rijksstudio</p></a></li>
 			</ul>
 
 			<ul>
@@ -29,15 +29,21 @@
 				<li><a href="#">Inloggen</a></li>
 				<li><a href="#">Giftshop</a></li>
 				<li><a href="#">Tickets</a></li>
+				<li><img src="./images/snowflake.svg" alt="sneeuwvlokje"></li>
 			</ul>
 		</nav>
-		<figure>
-			<img src="./images/rijksmuseum-logo.svg" alt="logo rijksmuseum">
+
+		<figure id="logoContainer">
+			<div id="logoKerst" class="logoNormaal"></div>
 		</figure>
+
 	</header>
 	
 <main>
-	<Section>
+
+	<Section aria-label="Dropdownmeny">
+		<button type="button">Groter</button>
+    	<button type="button">Kleiner</button>
 		<ul>
 			<li><a>Bezoek</a></li>
 			<li><a>Zien en Doen</a></li>
@@ -52,29 +58,30 @@
 			<li><a>Groepen</a></li>
 			<li><a>Toegankelijkheid</a></li>
 		</ul>
+
 		<img src="./images/antonello.jpeg" alt="Antonello">
 	</Section>
 
-	<section>
+	<section aria-label="Tentoonstelling Vergeet me niet">
 		<h2>Vergeet me niet </h2>
 		<p>Tentoonstelling | t/m 16 januari</p>
 		<img src="./images/Petrus_Christus1.jpg" alt="Petrus_Christus">
 	</section>
 	
-	<section>
+	<section aria-label="Bezoek het Rijksmuseum veilig">
 		<h2>Veilig bezoek</h2>
 		<p>Bezoek volgens RIVM richtlijnen</p>
 		<img src="./images/veilig_bezoek.jpeg" alt="Veilig bezoek">	
 	</section>
 	
-	<section>
+	<section aria-label="Restauratie de Nachtwacht">
 		<h2>Operatie nachtwacht</h2>
 		<p>De Nachtwacht Dichtbij</p>
 		<img src="./images/operatie_nachtwacht.jpeg" alt="Operatie Nachtwacht">
 		</a>
 	</section>
 
-	<section>
+	<section aria-label="Vrienden van het rijksmuseum en de Webshop">
 		<article>
 			<h2>Vrienden</h2>
 			<p>Altijd toegang zonder starttijd</p>
@@ -88,7 +95,7 @@
 		</article>
 	</section>
 
-	<section>
+	<section aria-label="Kunst in gebarentaal">
 		<h2>Kunst in gebaren</h2>
 		<p>Familierondleiding in Nederlandse Gebarentaal</p>
 		<a href="./gebaren.html">
